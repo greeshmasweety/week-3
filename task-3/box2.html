@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <style>
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://static.vecteezy.com/system/resources/thumbnails/032/260/959/small_2x/the-house-on-the-lake-ai-generated-free-photo.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+       
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: rgba(51, 51, 51, 0.8); 
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+       
+        .menu-icon {
+            display: none;
+            color: #fff;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+       
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            .navbar {
+                flex-wrap: wrap;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+        }
+
+       
+        .nav-active {
+            display: flex !important;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+            <span>&#9776;</span>
+        </div>
+    </nav>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuIcon = document.querySelector('.menu-icon');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuIcon.addEventListener('click', () => {
+                navLinks.classList.toggle('nav-active');
+            });
+        });
+    </script>
+</body>
+</html>

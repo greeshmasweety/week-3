@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #9c6594;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            border: 5px solid #333;
+        }
+
+        .gallery-container {
+            width: 90%;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+           
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 40px);
+            max-width: calc(33.333% - 40px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media (max-width: 992px) {
+            .gallery-item {
+                flex: 1 1 calc(50% - 40px); 
+                max-width: calc(50% - 40px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                flex: 1 1 100%; 
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="https://qph.cf2.quoracdn.net/main-qimg-8494aa0730762e37d8d1ac687fe12112" alt="Gallery Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2023/06/Hyderabad-Cover.jpg" alt="Gallery Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTi1KRceuHSz4tOxcJ_1qsnXVDaB76JYSHPoXVNOGAEYldomDqtZBLbJxjykY_Mm3XXFM&usqp=CAU" alt="Gallery Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="https://lgstravellers.com/wp-content/uploads/2024/05/20ba36057a.webp" alt="Gallery Image"></div>
+        <div class="gallery-item">
+            <img src="https://www.holidify.com/images/cmsuploads/compressed/45549374805_943cf6850b_o_20190325104722.jpg" alt="Gallery Image">
+      </div>
+            <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0UTMiCiYYgsyVqVVklhDjvjN4SV2B4qxSVefsYV47xgbDKcBzZJXCGHz7k804HqnsQPo&usqp=CAU" alt="Gallery Image 3">
+        </div>
+    </div>
+</body>
+</html>

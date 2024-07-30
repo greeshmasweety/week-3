@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card Layout</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            flex: 1 1 calc(33.333% - 40px); 
+            max-width: calc(33.333% - 40px);
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .card-description {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        @media (max-width: 992px) {
+            .card {
+                flex: 1 1 calc(50% - 40px); 
+                max-width: calc(50% - 40px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                flex: 1 1 100%; 
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/cf/1f/d0/cf1fd048507719e76cfc9c97f3fbc2e3.jpg" alt="Card Image">
+            <div class="card-content">
+                <h2 class="card-title">birthday invitation</h2>
+                <p class="card-description">Celebrating a birthday is always a special occasion, and the invitation sets the tone for the entire event. Whether you're planning a party for a child, a friend, or an adult, the right words can make your invitation truly memorable. Here, we've compiled a diverse range of birthday invitation texts to suit various themes and age groups. Dive in and find the perfect wording for your invitations!</p>
+
+                </div>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/8b/8a/71/8b8a71a68344cf5afc21cec3f9dc5649.gif" alt="Card Image">
+            <div class="card-content">
+                <h2 class="card-title">indian flage</h2>
+                <p class="card-description">In the national flag of India the top band is of Saffron colour, indicating the strength and courage of the country. The white middle band indicates peace and truth with Dharma Chakra. The last band is green in colour shows the fertility, growth and auspiciousness of the land.
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_SWQE6_YUqqE827jLPG5x0ID0CYwz25aLKuH1EXpp7yBZxteyhVLMeshX86rWZx6zg_c&usqp=CAU200*300" alt="Card Image">
+            <div class="card-content">
+                <h2 class="card-title">unity in society</h2>
+                <p class="card-description">In a united society, people work together to achieve common goals, such as reducing poverty, promoting education, and improving healthcare. Unity helps to reduce conflicts and promotes peaceful coexistence among different communities.
+        </div>Unity brings people together to achieve shared goals. When people work together towards a common purpose, they can pool their resources and expertise, increasing their chances of success. Collective action also has a more significant impact than individual actions, as it amplifies the voices and efforts of the group.
+       
+    </div>
+</body>
+</html>

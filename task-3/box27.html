@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid Layout with Percentages</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 50%; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.column-left {
+    background-color: #7ca8d7;
+    color: white;
+}
+
+.column-right {
+    background-color: #e698da;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .column {
+        width: 100%; 
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column column-left">
+            <h2>Left Column</h2>
+         
+            <p>What is Social Media? Social media refers to the means of interactions among people in which they create, share, and/or exchange information and ideas in virtual communities and networks. The Office of Communications and Marketing manages the main Facebook, X/Twitter, Instagram, LinkedIn, and YouTube accounts..</p>
+        <p></p>
+        </div>
+        <div class="column column-right">
+            <h2>Right Column</h2><p>Social media is digital technology that allows the sharing of ideas and information, including text and visuals, through virtual networks and communities. Social media typically features user-generated content that lends itself to engagement via likes, shares, comments, and discussion.olumn</h2>
+            </p>
+    </div>
+</body>
+</html>

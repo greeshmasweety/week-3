@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables </title>
+    <style>
+       
+        :root {
+            
+            --primary-color: #3498db;
+            --secondary-color: #13fdde;
+            --accent-color: hsl(55, 78%, 57%);
+
+           
+            --base-font-size: 16px;
+            --heading-font-size: 2rem;
+
+           
+            --padding: 1rem;
+            --margin: 1rem;
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            font-size: var(--base-font-size);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: var(--primary-color);
+        }
+
+        header, footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: var(--padding);
+            margin-bottom: var(--margin);
+        }
+
+        .section {
+            padding: var(--padding);
+            margin: var(--margin);
+            text-align: center;
+            border: 1px solid var(--secondary-color);
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        
+        h1 {
+            font-size: var(--heading-font-size);
+            margin-bottom: var(--margin);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <section class="section">
+        <h1>Section 1</h1>
+        <p>hello everyone.</p>
+    </section>
+    <section class="section">
+        <h1>Section 2</h1>
+        <p>how are you guys.</p>
+    </section>
+    <section class="section">
+        <h1>Section 3</h1>
+        <p>introduce yourself.</p>
+    </section>
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+</body>
+</html>

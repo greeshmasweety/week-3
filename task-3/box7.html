@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Card Layout</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card h3 {
+  margin: 16px 0;
+  font-size: 1.25em;
+}
+
+.card p {
+  margin: 0 16px 16px;
+  font-size: 1em;
+  color: #666;
+}
+
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+  </style>
+  <div class="grid-container">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ0nmyMNlhi0DkLr1AddCnhCgPBXF7y3WQcg&s" alt="Card Image">
+      <h3>beatuiy of peacock</h3>
+      <p>Hello my name is kiara. Currently i am doing art exhibitions in london. I am a professional artist involved in the creation of many abstract paintings and sketches . Painting is my passion since I am doing it from the past 15 years . "Everyone do have a passion for something in their life that motivates or inspires in some way." I am also one of them and passionate about drawing and paintings that sometimes I don't even know what I am drawing but I draw :-)</p>
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Ue88SJfCMEMhAm13dRj_RsSwonH6npubmQ&s" alt="Card Image">
+      <h3>green gardening</h3>
+      <p>It takes years of hard work and study to design a perfect garden. To create a garden, you’ll need to understand form and function, the subtlety of design, and the science of living things. We’ve covered seven interior wonders of world previously, so now we have seven examples of the world’s most influential and important gardens. Distributed throughout the world, these gardens are the perfect examples of what landscape architects strive to achieve.</p>
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiGwKXsYBMYPpeiG78b6ubHv6loNKfEYT5bjn1tK_pI1pWp7863IoAq2ac5uCdKsTiZQc&usqp=CAU" alt="Card Image">
+      <h3>famouse place </h3>
+      <p>The United States is filled with beautiful places to explore from ultra-blue ice caves to a park filled with dinosaur fossils and a valley that could pass for Mars. Whether you’re planning the road trip of a lifetime or an immersive getaway in the wilderness, we’ve rounded up the most incredible natural wonders in America to add to your bucket list.</p>
+    </div>
+    
+  </div>
+</body>
+</html>

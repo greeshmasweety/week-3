@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    width: 90%; 
+    max-width: 1200px; 
+}
+
+.responsive-image {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .image-container {
+        width: 95%; 
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="image-container">
+       <img src="https://www.investopedia.com/thmb/SVelZK_5qwSFqn68q_y0rXhPMKc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/socialnetworking-13cadb0b8b5941ab999a13c06e468821.jpg" alt="">
+    </div>
+</body>
+</html>

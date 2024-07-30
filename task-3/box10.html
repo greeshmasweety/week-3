@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .gallery {
+            display: grid;
+            gap: 10px;
+            padding: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKKA4kVTdWfpNulGl7DtYQWHn8xfDiSKj_3Q&s" alt="Placeholder Image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWBRqrcpuT1Z8UyNXXOU3DAc-zkcg3TUmAMD2sgF1m0Jp_HR_fgJlUSGYQrh3Igw9OBcg&usqp=CAU" alt="Placeholder Image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa5aYofchwZ-yzn6vQbP6iHe7rDbzuL6ukosfe4hLKLeCz1SS8znL0G7_J-G9QfqcgqYU&usqp=CAU" alt="Placeholder Image">
+        <img src="https://media.istockphoto.com/id/547409154/photo/blue-moon.jpg?b=1&s=612x612&w=0&k=20&c=j5hM8vj8mkM4auG6aGI79v5Y3G3-CQWkicIcEivX2nw=" alt="Placeholder Image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-7RJ8z0TGfl3xYy8Bn8Lmwo5fWg0MH4IQKalhZFoVpsf1kmBG0LibxHngbSCsyPNdVuQ&usqp=CAU" alt="Placeholder Image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1fd6rMbfBKdSWTL_lbO8fhv8Wa5NkvLqjnDnT8PdguydJgbCaQD24_-YwXgNBeurAsE8&usqp=CAU" alt="Placeholder Image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsO9lw9ySF-myRounQibAYciYUKlyonmw4lbkuJplE_J7iZfbTbBM5jKH8W7lyYXO-9TM&usqp=CAU" alt="Placeholder Image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWnrOtMZ43DYX_VeHFaEgsZBtFyw57hhxAD54g4CUAt0KnMSh8Gx9TCCfqxHgUFkRrUTc&usqp=CAU" alt="Placeholder Image">
+    </div>
+</body>
+</html>

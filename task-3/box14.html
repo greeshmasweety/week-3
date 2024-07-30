@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Overflow Ellipsis </title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+.text-container {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid #000;
+    background-color: blueviolet;
+    padding: 5px;
+}
+    </style>
+</head>
+<body><center>
+    <div class="text-container">
+        This is a very long text string that will not fit inside the fixed-width container and will be truncated with an ellipsis.
+    </div>
+</body>
+
+</html>

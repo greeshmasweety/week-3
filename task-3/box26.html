@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Typography</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.responsive-heading {
+    font-size: 10vw; 
+    margin: 0;
+    text-align: center;
+    color: #007BFF;
+}
+
+
+@media (max-width: 600px) {
+    .responsive-heading {
+        font-size: 6vw;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <h1 class="responsive-heading">Responsive Heading</h1>
+</body>
+</html>

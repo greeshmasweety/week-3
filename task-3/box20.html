@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decorative Elements with ::before and ::after</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.decorative-text {
+    font-size: 1.5em;
+    color: hsl(180, 78%, 2%);
+    padding: 10px;
+    border: 2px solid hwb(294 0% 0%);
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+}
+
+.decorative-text::before {
+    content:" 💕";
+    font-size: 1.5em;
+    color: #FFD700;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.decorative-text::after {
+    content: "ㅤ 💕";
+    font-size: 1.5em;
+    color: #fc0d1d;
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+    </style>
+</head>
+<body>
+    <div class="decorative-text">
+        welcome to my world guysε.🖐🖐🖐
+    </div>
+</body>
+</html>
